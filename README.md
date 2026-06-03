@@ -5,20 +5,17 @@
 ## 檔案結構
 
 ```text
-├── index.html              # 網站
+├── index.html              # 網站入口
 ├── style.css               # 介面樣式
 ├── app.js                  # 互動、本機詩庫、TTS 與 API 邏輯
 ├── poems.json              # 本機詩詞資料
 ├── README.md               # 專案說明
 ├── USER_GUIDE.md           # 使用者指南
-├── RELEASE_NOTES.md        # 發布版本紀錄
 ├── CHANGELOG.md            # 完整更新紀錄
-├── CHECKSUMS.txt           # 發布檔案雜湊值
-└── docs/                   # 報告資料
-    ├── README.md           # docs 資料夾說明
-    ├── PROJECT_REPORT.md   # 專題報告 Markdown
-    ├── SOUL.md             # 作者人格設定
-    └── UPDATE_SUMMARY.md   # 本版整合更新與檢查摘要
+└── docs/                   # 期末展示與設計文件
+    ├── FINAL_REPORT.md      # 期末專題報告
+    ├── DEMO_VIDEO_SCRIPT.md # Demo 影片腳本與現場展示流程
+    └── SOUL.md              # 詩魂人格與設計原則
 ```
 
 ## 目前版本：v1.5.0
@@ -34,11 +31,10 @@
 - 修正 `poems.json` 快取問題，使用者不需要手動在網址後加版本參數。
 - 修正本機詩庫輸出清理，避免「譯文及注釋／注釋／註解／英譯」等原始資料標籤進入「詩魂自述」或「魂歸何處」。
 - 補強長篇題序分離，原詩直排區只保留詩句本體。
-- 更新 README、USER_GUIDE、RELEASE_NOTES、CHANGELOG 與 docs 文件，讓發布包內的說明與實際程式一致。
+- 更新 README、USER_GUIDE、CHANGELOG 與 docs 文件，讓發布包內的說明與實際程式一致。
 
 完整版本紀錄請看：
 
-- `RELEASE_NOTES.md`：正式發布紀錄
 - `CHANGELOG.md`：完整更新紀錄
 
 ## 使用方式
@@ -95,13 +91,13 @@
 - **v1.4.1**：修正「詩魂自述」與「魂歸何處」誤顯示譯文標題、注釋標籤與英譯資料的問題。
 - **v1.5.0**：補強譯文清理，處理「註解」與 inline 注釋，將長篇題序移出原詩正文，並補齊發布說明文件。
 
-詳細內容請見 `RELEASE_NOTES.md` 與 `CHANGELOG.md`。
+詳細內容請見 `CHANGELOG.md`。
 
 ## 期末展示文件
 
-本發布包已補齊 Week 16 成品展示與反思所需文件：
+本發布包保留必要的 Week 16 成品展示與反思文件：
 
-- `docs/FINAL_REPORT.md` / `docs/FINAL_PROJECT_REPORT.docx`：期末專題報告
-- `docs/DEMO_VIDEO_SCRIPT.md` / `docs/DEMO_VIDEO_SCRIPT.docx`：Demo 影片腳本與現場展示流程
-- `docs/SUBMISSION_CHECKLIST.md`：提交與錄影前檢查清單
-- `RELEASE_NOTES.md` / `CHANGELOG.md`：完整更版紀錄
+- `docs/FINAL_REPORT.md`：期末專題報告
+- `docs/DEMO_VIDEO_SCRIPT.md`：Demo 影片腳本與現場展示流程
+- `docs/SOUL.md`：詩魂人格與設計原則
+- `CHANGELOG.md`：完整更版紀錄

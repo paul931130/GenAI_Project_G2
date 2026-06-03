@@ -18,8 +18,8 @@
    - 原詩區只保留真正詩句，避免題序進入直排原文區。
 
 3. **補齊發布說明文件**
-   - 更新 `README.md`、`USER_GUIDE.md`、`RELEASE_NOTES.md`、`CHANGELOG.md`、`docs/PROJECT_REPORT.md`、`docs/SOUL.md` 與 `docs/README.md`。
-   - 新增 `docs/UPDATE_SUMMARY.md`，整理本版修正範圍、檢查結果與發布前測試項目。
+   - 更新 `README.md`、`USER_GUIDE.md`、`CHANGELOG.md`、`docs/FINAL_REPORT.md`、`docs/DEMO_VIDEO_SCRIPT.md` 與 `docs/SOUL.md`。
+   - 文件結構精簡為期末展示需要的報告、Demo 腳本與設計原則。
 
 4. **檢查項目**
    - `poems.json` 可正常解析，共 315 首。
@@ -175,7 +175,7 @@
 4. **新增使用者文件**
    - `README.md`：專案說明與發布方式。
    - `USER_GUIDE.md`：使用者操作說明。
-   - `docs/PROJECT_REPORT.md`：專題報告內容。
+   - `docs/FINAL_REPORT.md`：期末專題報告內容。
    - `docs/SOUL.md`：作品人格與設計原則。
 
 5. **強化 API Key 安全說明**
@@ -219,12 +219,10 @@ app.js
 poems.json
 README.md
 USER_GUIDE.md
-RELEASE_NOTES.md
 CHANGELOG.md
-docs/README.md
-docs/PROJECT_REPORT.md
+docs/FINAL_REPORT.md
+docs/DEMO_VIDEO_SCRIPT.md
 docs/SOUL.md
-CHECKSUMS.txt
 ```
 
 ---
@@ -233,8 +231,8 @@ CHECKSUMS.txt
 
 後續如果繼續改版，建議遵守以下規則：
 
-1. 每次功能或資料格式改動，都更新 `RELEASE_NOTES.md` 與 `CHANGELOG.md`。
+1. 每次功能或資料格式改動，都更新 `CHANGELOG.md`。
 2. 如果影響使用者操作，更新 `USER_GUIDE.md`。
-3. 如果影響專題展示、技術架構或研究動機，更新 `docs/PROJECT_REPORT.md`。
+3. 如果影響專題展示、技術架構或研究動機，更新 `docs/FINAL_REPORT.md`。
 4. 如果改動 `app.js`、`style.css`、`poems.json`，同步更新版本參數，避免 GitHub Pages 快取造成舊版殘留。
 5. 發布前至少測試：本機詩庫查詢、Gemini API、隨機召喚、手機版導覽、收藏、朗讀、校注分離。
