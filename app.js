@@ -13,8 +13,9 @@ const POEM_JSON_GENERATION_CONFIG = {
 };
 let geminiApiKey = sessionStorage.getItem(GEMINI_API_KEY_STORAGE) || '';
 let geminiApiKeyPrompted = false;
-const LOCAL_POEM_LIBRARY_VERSION = '20260603-output-format-v3';
-const LOCAL_POEM_LIBRARY_URL = `poems.json?v=${LOCAL_POEM_LIBRARY_VERSION}`;
+const LOCAL_POEM_LIBRARY_VERSION = '20260603-output-format-v4';
+// 每次載入頁面都替 poems.json 自動加時間戳，避免瀏覽器吃到舊詩庫；使用者不用手動在網址後加 ?v=。
+const LOCAL_POEM_LIBRARY_URL = `poems.json?v=${LOCAL_POEM_LIBRARY_VERSION}&t=${Date.now()}`;
 let LOCAL_POEM_DATA = null;
 let localPoemDataLoadPromise = null;
 let localPoemDataLoadError = '';
