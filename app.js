@@ -657,7 +657,7 @@ function extractLibraryTranslation(item) {
     section = section
       .replace(/[\u200B-\u200D\uFEFF]*\s*(?:注釋|註解)\s*[\s\S]*$/u, '')
       .replace(/\n\s*(?:注釋|註解)[\s\S]*$/u, '');
-    const cleaned = cleanPoemLibraryText(section, 220);
+    const cleaned = cleanPoemLibraryText(section, 10000);
 
     if (cleaned && !isMostlyEnglishText(cleaned)) return cleaned;
   }
@@ -1942,6 +1942,7 @@ updatePersona('a'); updatePersona('b');
 let dHistory = [], dRound = 0, dRunning = false, dStop = false;
 
 async function startDialogue() {
+  if (dRunning) return; 
   const pA = document.getElementById('poet-a').value;
   const pB = document.getElementById('poet-b').value;
   const topic = document.getElementById('d-topic').value.trim() || '月亮';
